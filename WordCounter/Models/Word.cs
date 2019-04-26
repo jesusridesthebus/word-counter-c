@@ -1,9 +1,15 @@
-namespace ToDoList.Models
-{
-  public class Item
-  {
+using System.Collections.Generic;
 
-    // properties, methods, etc. will go here.
+namespace WordCounter
+{
+  public class Word
+  {
+    private string _word;
+
+    public string EnterWord(string word)
+    {
+      _word = word;
+    }
 
   }
 }

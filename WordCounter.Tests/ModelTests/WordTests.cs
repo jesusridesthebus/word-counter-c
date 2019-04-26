@@ -1,13 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using WordCounter;
+using System;
+using System.Collections.Generic;
 
-namespace ToDoList.Tests
+namespace WordCounter.Tests
 {
     [TestClass]
-    public class ItemTest
+    public class WordTest
     {
-
-        // Test methods will go here.
+        [TestMethod]
+        public void SetProperty_StoresWord_True()
+        {
+            EnterWord testWord = new EnterWord("word");
+            Assert.AreEqual(typeof(EnterWord), testWord.GetType());
+        }
 
     }
 }
