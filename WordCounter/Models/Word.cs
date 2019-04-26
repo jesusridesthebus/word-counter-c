@@ -6,9 +6,14 @@ namespace WordCounter
   {
     private string _word;
 
-    public string EnterWord(string word)
+    public Word(string word)
     {
       _word = word;
+    }
+
+    public string GetWord()
+    {
+      return _word;
     }
 
   }

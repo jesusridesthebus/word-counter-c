@@ -11,8 +11,8 @@ namespace WordCounter.Tests
         [TestMethod]
         public void SetProperty_StoresWord_True()
         {
-            EnterWord testWord = new EnterWord("word");
-            Assert.AreEqual(typeof(EnterWord), testWord.GetType());
+            Word testWord = new Word("word");
+            Assert.AreEqual(typeof(Word), testWord.GetType());
         }
 
     }
