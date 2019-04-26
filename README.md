@@ -1,4 +1,4 @@
-# _Scrabble_
+# _Word Counter_
 
 #### _Word Counter solo project 4/26/19_
 
@@ -10,8 +10,8 @@ Use C# to gather a word and a sentence from a user, and check how frequently tha
 
 ## Specs
 
-| Behavior | Input | Output |
-| ------------- |:-------------:| -----:|
+| Behavior | Input | Output | Input Explanation |
+| ------------- |:----------------:| --------:| --------------------------:|
 | Gather a word from user | a | a | I selected "a" as the input because it is a simple and short word |
 | Check for how frequently a word appears in a one-word sentence | a | 1 | I selected "a" as the input because it is a simple and short word |
 | Gather a sentence from user | I have a thing | I have a thing | I selected this sentence as the input because it is a short sentence that includes the first word and another word that includes it within in the word ("have" includes "a"). This will be helpful in subsequent tests in order to eliminate other words from the count that include the word being searched for.
