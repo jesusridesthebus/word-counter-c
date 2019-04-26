@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WordCounter",
+    "\\WordCounter.Tests",
+    "\\WordCounter.Tests\\ModelTests",
+    "\\WordCounter\\Models"
+  ],
+  "SelectedNode": "\\WordCounter.Tests",
+  "PreviewInSolutionExplorer": false
+}
