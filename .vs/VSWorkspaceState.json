@@ -6,6 +6,6 @@
     "\\WordCounter.Tests\\ModelTests",
     "\\WordCounter\\Models"
   ],
-  "SelectedNode": "\\WordCounter.Tests",
+  "SelectedNode": "\\WordCounter.Tests\\ModelTests\\WordTests.cs",
   "PreviewInSolutionExplorer": false
 }
