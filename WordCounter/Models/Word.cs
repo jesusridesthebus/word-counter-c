@@ -16,5 +16,17 @@ namespace WordCounter
       return _word;
     }
 
+    public void SetWord(string newWord)
+    {
+      _word = newWord;
+    }
+
+    public char[] MakeArray()
+    {
+      _word = _word.ToLower();
+      char[] charArr = _word.ToCharArray();
+      return charArr;
+    }
+
   }
 }

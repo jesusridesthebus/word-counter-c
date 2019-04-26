@@ -11,8 +11,16 @@ namespace WordCounter.Tests
         [TestMethod]
         public void SetProperty_StoresWord_True()
         {
-            Word testWord = new Word("word");
+            Word testWord = new Word("a");
             Assert.AreEqual(typeof(Word), testWord.GetType());
+        }
+
+        [TestMethod]
+        public void CountWord_CountsWordInShortSentence_Int()
+        {
+            Array[] testArray = {"a"};
+            Word testWord = new Word("a");
+            CollectionAssert.AreEqual(testArray, testWord.CountWord());
         }
 
     }
