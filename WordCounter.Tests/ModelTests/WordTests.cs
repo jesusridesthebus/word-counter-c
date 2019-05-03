@@ -18,12 +18,27 @@ namespace WordCounter.Tests
         }
 
         [TestMethod]
-        public void Count_CountsWordsInPhrase_Int()
+        public void GetWord_GetWordRegardlessOfCase_String()
         {
-            RepeatCounter myCounter = new RepeatCounter("hey", "I said hey");
+            RepeatCounter myCounter = new RepeatCounter("hey", "Hey there");
             int actualCount = myCounter.Counter();
             Assert.AreEqual(1, actualCount);
         }
 
+        [TestMethod]
+        public void Count_CountsWordsInPhrase_Int()
+        {
+            RepeatCounter myCounter = new RepeatCounter("hey", "They said hey");
+            int actualCount = myCounter.Counter();
+            Assert.AreEqual(1, actualCount);
+        }
+
+        [TestMethod]
+        public void Count_CountsMultipleMatches_Int()
+        {
+            RepeatCounter myCounter = new RepeatCounter("hey", "They said hey hey");
+            int actualCount = myCounter.Counter();
+            Assert.AreEqual(2, actualCount); 
+        }
     }
 }
