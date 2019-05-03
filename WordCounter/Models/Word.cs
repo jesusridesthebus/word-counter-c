@@ -2,31 +2,20 @@ using System.Collections.Generic;
 
 namespace WordCounter
 {
-  public class Word
+  public class RepeatCounter
   {
-    private string _word;
+    public string Word {get; set;}
+    public string Phrase {get; set;}
+    public string[] SplitPhrase {get; set;}
 
-    public Word(string word)
+    public RepeatCounter(string word, string phrase)
     {
-      _word = word;
+      Word = word;
+      Phrase = phrase;
+      SplitPhrase = phrase.Split(" ");
     }
 
-    public string GetWord()
-    {
-      return _word;
-    }
 
-    public void SetWord(string newWord)
-    {
-      _word = newWord;
-    }
-
-    public char[] MakeArray()
-    {
-      _word = _word.ToLower();
-      char[] charArr = _word.ToCharArray();
-      return charArr;
-    }
 
   }
 }

@@ -8,19 +8,28 @@ namespace WordCounter.Tests
     [TestClass]
     public class WordTest
     {
+        // [TestMethod]
+        // public void SetProperty_StoresWord_True()
+        // {
+        //     Word testWord = new Word("a");
+        //     Assert.AreEqual(typeof(Word), testWord.GetType());
+        // }
+
         [TestMethod]
-        public void SetProperty_StoresWord_True()
+        public void GetWord_GetAWord_String()
         {
-            Word testWord = new Word("a");
-            Assert.AreEqual(typeof(Word), testWord.GetType());
+            RepeatCounter myCounter = new RepeatCounter("hey", "hey there");
+            string testWord = "hey";
+            string actualWord = myCounter.Word;
+            Assert.AreEqual(testWord, actualWord);
         }
 
         [TestMethod]
-        public void CountWord_CountsWordInShortSentence_Int()
+        public void Count_CountsWordsInPhrase_Int()
         {
-            Array[] testArray = {"a"};
-            Word testWord = new Word("a");
-            CollectionAssert.AreEqual(testArray, testWord.CountWord());
+            RepeatCounter myCounter = new RepeatCounter("hey", "I said hey");
+            int actualCount = myCounter.Counter();
+            Assert.AreEqual(1, actualCount);
         }
 
     }
