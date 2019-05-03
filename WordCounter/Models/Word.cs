@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System;
 
-namespace WordCounter
+namespace WordCounter.Models
 {
   public class RepeatCounter
   {
@@ -11,8 +11,8 @@ namespace WordCounter
 
     public RepeatCounter(string word, string phrase)
     {
-      Word = word;
-      Phrase = phrase;
+      Word = word.ToLower();
+      Phrase = phrase.ToLower();
       SplitPhrase = phrase.Split(" ");
     }
 

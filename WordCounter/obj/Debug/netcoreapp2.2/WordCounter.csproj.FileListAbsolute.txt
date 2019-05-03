@@ -7,5 +7,7 @@ C:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\Wo
 C:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.AssemblyInfo.cs
 C:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.dll
 C:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.pdb
+c:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.runtimeconfig.json
+c:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.2\WordCounter.runtimeconfig.dev.json
 c:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorAssemblyInfo.cache
 c:\Users\Liz\Desktop\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.2\WordCounter.RazorAssemblyInfo.cs
