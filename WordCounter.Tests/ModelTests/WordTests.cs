@@ -8,13 +8,6 @@ namespace WordCounter.Tests
     [TestClass]
     public class WordTest
     {
-        // [TestMethod]
-        // public void SetProperty_StoresWord_True()
-        // {
-        //     Word testWord = new Word("a");
-        //     Assert.AreEqual(typeof(Word), testWord.GetType());
-        // }
-
         [TestMethod]
         public void GetWord_GetAWord_String()
         {
@@ -24,13 +17,13 @@ namespace WordCounter.Tests
             Assert.AreEqual(testWord, actualWord);
         }
 
-        [TestMethod]
-        public void Count_CountsWordsInPhrase_Int()
-        {
-            RepeatCounter myCounter = new RepeatCounter("hey", "I said hey");
-            int actualCount = myCounter.Counter();
-            Assert.AreEqual(1, actualCount);
-        }
+        // [TestMethod]
+        // public void Count_CountsWordsInPhrase_Int()
+        // {
+        //     RepeatCounter myCounter = new RepeatCounter("hey", "I said hey");
+        //     int actualCount = myCounter.Counter();
+        //     Assert.AreEqual(1, actualCount);
+        // }
 
     }
 }
