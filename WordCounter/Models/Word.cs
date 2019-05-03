@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 namespace WordCounter
 {
@@ -15,7 +16,18 @@ namespace WordCounter
       SplitPhrase = phrase.Split(" ");
     }
 
-
+    public int Counter()
+    {
+      int totalCount = 0;
+      foreach(var word in SplitPhrase)
+      {
+        if(word == Word)
+        {
+          totalCount++;
+        }
+      }
+      return totalCount;
+    }
 
   }
 }
