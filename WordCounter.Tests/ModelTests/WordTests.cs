@@ -20,7 +20,7 @@ namespace WordCounter.Tests
         [TestMethod]
         public void GetWord_GetWordRegardlessOfCase_String()
         {
-            RepeatCounter myCounter = new RepeatCounter("hey", "Hey there");
+            RepeatCounter myCounter = new RepeatCounter("hey", "HeY there");
             int actualCount = myCounter.Counter();
             Assert.AreEqual(1, actualCount);
         }

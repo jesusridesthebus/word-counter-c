@@ -20,7 +20,8 @@ namespace WordCounter
       int totalCount = 0;
       foreach(var word in SplitPhrase)
       {
-        if(word == Word)
+        string lowerWord = word.ToLower();
+        if(lowerWord == Word)
         {
           totalCount++;
         }
