@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-// using System;
+using System;
 
 namespace WordCounter
 {
@@ -36,7 +36,7 @@ namespace WordCounter
       string alphaOnlyWord = "";
       foreach(char letter in wordArr)
       {
-        if(char.IsLetter(letter))
+        if(Char.IsLetter(letter))
         {
         alphaOnlyWord += letter;
         }
