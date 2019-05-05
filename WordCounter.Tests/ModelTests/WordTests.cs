@@ -9,19 +9,17 @@ namespace WordCounter.Tests
     public class WordTest
     {
         [TestMethod]
-        public void GetWord_GetAWord_String()
+        public void GetWord_GetASingleWord_String()
         {
-            RepeatCounter myCounter = new RepeatCounter("hey", "hey there");
-            string testWord = "hey";
-            string actualWord = myCounter.Word;
-            Assert.AreEqual(testWord, actualWord);
+            RepeatCounter myCounter = new RepeatCounter("hey", "hey");
+            int actualCount = myCounter.Counter();
+            Assert.AreEqual(1, actualCount);
         }
 
         [TestMethod]
         public void GetWord_GetWordRegardlessOfCase_String()
         {
-            
-            RepeatCounter myCounter = new RepeatCounter("hey", "HeY there");
+            RepeatCounter myCounter = new RepeatCounter("hey", "HeY");
             int actualCount = myCounter.Counter();
             Assert.AreEqual(1, actualCount);
         }
@@ -30,9 +28,8 @@ namespace WordCounter.Tests
         public void GetWord_GetWordWithPunctuation_String()
         {
             RepeatCounter myCounter = new RepeatCounter("hey", "hey!");
-            string testWord = "hey";
-            string actualWord = myCounter.Word;
-            Assert.AreEqual(testWord, actualWord);
+            int actualCount = myCounter.Counter();
+            Assert.AreEqual(1, actualCount);
         }
 
         [TestMethod]

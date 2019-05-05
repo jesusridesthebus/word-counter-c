@@ -30,18 +30,18 @@ namespace WordCounter
       return totalCount;
     }
 
-    public string RemoveNonLetters(string word)
+    public string RemoveNonLetters(string input)
     {
-      char[] wordArr = word.ToLower().ToCharArray();
-      string alphaOnlyWord = "";
-      foreach(char letter in wordArr)
+      char[] inputArr = input.ToLower().ToCharArray();
+      string alphaOnlyInput = "";
+      foreach(char letter in inputArr)
       {
         if(Char.IsLetter(letter))
         {
-        alphaOnlyWord += letter;
+        alphaOnlyInput += letter;
         }
       }
-      return alphaOnlyWord.ToString();
+      return alphaOnlyInput;
     }
 
   }
