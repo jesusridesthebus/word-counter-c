@@ -26,6 +26,14 @@ namespace WordCounter.Tests
         }
 
         [TestMethod]
+        public void GetWord_GetWordWithPunctuation_String()
+        {
+            RepeatCounter myCounter = new RepeatCounter("hey", "hey!");
+            int actualCount = myCounter.Counter();
+            Assert.AreEqual(1, actualCount);
+        }
+
+        [TestMethod]
         public void Count_CountsWordsInPhrase_Int()
         {
             RepeatCounter myCounter = new RepeatCounter("hey", "They said hey");
@@ -40,5 +48,6 @@ namespace WordCounter.Tests
             int actualCount = myCounter.Counter();
             Assert.AreEqual(2, actualCount); 
         }
+ 
     }
 }
