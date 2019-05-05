@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+// using System;
 
 namespace WordCounter
 {
@@ -7,18 +8,12 @@ namespace WordCounter
     public string Word {get; set;}
     public string Phrase {get; set;}
     public string[] SplitPhrase {get; set;}
-    // public char[] SplitWord {get; set;}
-
-    // char[] letterArray = letterString.ToCharArray();
-    // letterArray = Array.FindAll<char>(letterArray, (char => (char.IsLetter(c) || char.IsWhiteSpace(char))));
-    // letterString = new string(letterArray);
 
     public RepeatCounter(string word, string phrase)
     {
-      Word = word.ToLower();
-      Phrase = phrase.ToLower();
+      Word = word;
+      Phrase = phrase;
       SplitPhrase = phrase.Split(" ");
-      // SplitWord = phrase.Split("");
     }
 
     public int Counter()
@@ -35,21 +30,20 @@ namespace WordCounter
       return totalCount;
     }
 
-    public string RemoveNonLetters(string input)
+    public string RemoveNonLetters(string word)
     {
-      StringBuilder sb = new StringBuilder();
-      foreach(char c in input)
+      char[] wordArr = word.ToLower().ToCharArray();
+      string alphaOnlyWord = "";
+      foreach(char letter in wordArr)
       {
-        if(char.IsLetter(c))
-        sb.Append(c);
+        if(char.IsLetter(letter))
+        {
+        alphaOnlyWord += letter;
+        }
       }
-      return sb.ToString();
+      return alphaOnlyWord.ToString();
     }
 
-  // public class StringBuilder
-  // {
-  //   // public string Word {get; set;}
-  // }  
   }
 }
 
